@@ -12,7 +12,7 @@ def setMode(mode):
         flightModeService = rospy.ServiceProxy('/mavros/set_mode', mavros_msgs.srv.SetMode)
         isModeChanged = flightModeService(custom_mode=mode)
     except (rospy.ServiceException, e):
-        print ("service set_mode call failed: %s. GUIDED Mode could not be set. Check that GPS is enabled"%e)
+        print ("service set_mode call failed: %s. Mode could not be set. Check the Drone!!"%e)
 
 def setLandMode():
     rospy.wait_for_service('/mavros/cmd/land')
