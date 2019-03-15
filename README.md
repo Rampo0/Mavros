@@ -23,5 +23,6 @@ B. Basic ROS command
     2. rosrun <packages> <your_code> (to run your program)
     3. rostopic
     4. roslaunch (sometimes launch file have init node)
+    5. roscd <packages> (Go to package directory)
       
     
